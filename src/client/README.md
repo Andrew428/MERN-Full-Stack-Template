@@ -1,4 +1,4 @@
-# Basic MERN Stack for my-weather-app
+# Basic MERN Stack
 
 ### Front-End - React + Redux
 
