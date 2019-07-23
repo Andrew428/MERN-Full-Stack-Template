@@ -43,7 +43,7 @@ Deploy Node.js WebServer on AWS EC2 and connect to MongoDB Atlas:
 	- ssh -I ~/.ssh/<YOUR-KEY-PAIR>.pem ubuntu@34.192.16.19
 
 5. Set up nignx:
-    sudo wget http://nginx.org/keys/nginx_signing.key
+    	sudo wget http://nginx.org/keys/nginx_signing.key
 	sudo apt-key add nginx_signing.key
 	cd /etc/apt
 	sudo nano sources.list
@@ -147,6 +147,8 @@ add_header Strict-Transport-Security “max-age=15768000” always;
 
 
 16.  cd to server and run yarn and node start server.js 
+     - sudo NODE_ENV=production yarn start
+
 
 17. Auto renew cert:
     sudo certbot renew --dry-run
@@ -176,7 +178,7 @@ Set Up MongoDB Atlas:
 2. Set up Peering and connect to AWS Elastic IP/VPC that is use for you web server
 	- Follow the steps.
 
-Cost:
+Cost - (Estimate at the time I put this doc together):
 M2 Atlas Server: 
 	$9 per month
 
